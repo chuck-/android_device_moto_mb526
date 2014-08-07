@@ -18,4 +18,12 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 <resources>
     <!-- Camera flash (App) -->
     <bool name="camera_has_flash">true</bool>
+    
+    <!-- If there is no sysfs-based control mechanism, enable this -->
+    <bool name="useCameraInterface">false</bool>
+
+    <!-- Full path to the sysfs toggle -->
+
+    <!-- Defy has a torch-flash sys folder, but use spotlight for "death ray" -->
+    <string name="flashDevice">/sys/class/leds/spotlight/brightness</string>    
 </resources>
